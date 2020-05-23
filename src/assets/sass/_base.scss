@@ -1,0 +1,76 @@
+/* Base */
+body {
+  font-family: $primary_font;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $primary_font;
+}
+h1 {
+  font-size: 38px;
+  font-weight: $weight_bold;
+}
+h2 {
+  font-size: 32px;
+  font-weight: $weight_bold;
+  line-height: 44px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: $weight_bold;
+  line-height: 42px;
+}
+p {
+  margin: 0;
+}
+
+/* Empty Space */
+.space-sm {
+  padding: $space_sm/2 0;
+}
+.space-md {
+  padding: $space_md/2 0;
+}
+.space-lg {
+  padding: $space_lg/2 0;
+}
+/* Box */
+.box {
+  padding: $space_lg/2;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+.box-shadow {
+  box-shadow: 0 0 33px 0 rgba(15, 22, 33, 0.1);
+}
+/* section */
+.section {
+  padding: $space_lg 0;
+  @media screen and (max-width: 991px) {
+      padding: $space_lg/2 0;
+  }
+}
+.section .lead {
+  color: #64606d;
+  font-size: 16px;
+  font-weight: $weight_normal;
+  line-height: 28px;
+}
+.section .icon {
+  width: 42px;
+  height: 42px;
+}
+.section .sub-title {
+  text-transform: uppercase;
+  color: #b5b5b5;
+  font-size: 18px;
+}
+
+.btn-lg {
+  padding: 10px 35px;
+}

@@ -1,0 +1,13 @@
+@import '../../../node_modules/modern-normalize/modern-normalize.css';
+@import 'helpers/variables';
+@import 'helpers/bootstrap-config';
+
+// Base
+@import 'base';
+
+// Components
+@import 'components/about';
+@import 'components/cover';
+@import 'components/feature';
+@import 'components/footer';
+@import 'components/testimonials';
