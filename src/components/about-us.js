@@ -1,8 +1,21 @@
 import React from "react"
-import { FaPlay } from 'react-icons/fa'
-import feature from '../assets/images/feature.png'
+import { useStaticQuery, graphql } from "gatsby"
+import Image from 'gatsby-image'
+import { FaPlay } from "react-icons/fa"
 
 const AboutUs = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "feature.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section id="about-us" className="section about-us">
       <div className="container">
@@ -13,13 +26,11 @@ const AboutUs = () => {
             <h2>Lorem ipsum dolor</h2>
             <div className="space-md"></div>
             <a href="/#" className="video-wrapper text-center d-block">
-              {<img
-                src={feature}
-                alt="About us"
-                className="img-fluid"
-              /> }
+              <Image 
+                fluid={data.file.childImageSharp.fluid}
+                alt="About us" className="img-fluid"
+              />
               <div className="play-btn">
-                {/* <i className="fas fa-play"></i> */}
                 <FaPlay />
               </div>
             </a>
