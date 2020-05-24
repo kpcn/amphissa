@@ -1,8 +1,26 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
 const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "hero-bg.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 5000) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+    }
+  `)
+
   return (
-    <div className="jumbotron jumbotron-fluid bg-transparent hero section m-0">
+    <BackgroundImage
+      Tag={`div`}
+      className="jumbotron jumbotron-fluid bg-transparent hero section m-0"
+      fluid={data.file.childImageSharp.fluid}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-lg-6 mr-lg-auto">
@@ -22,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </BackgroundImage>
   )
 }
 

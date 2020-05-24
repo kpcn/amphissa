@@ -1,4 +1,5 @@
 import React from "react"
+import Image from 'gatsby-image'
 
 const Feature = ({ imgSrc, children, rightToLeft = false }) => {
   return (
@@ -9,8 +10,8 @@ const Feature = ({ imgSrc, children, rightToLeft = false }) => {
             {children}
           </div>
           <div className="col-12 col-lg-6 text-center mt-4 mt-lg-0">
-            <img
-              src={imgSrc}
+            <Image
+              fluid={imgSrc}
               alt="feature"
               className="img-fluid feature-img"
             />

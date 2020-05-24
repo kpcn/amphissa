@@ -19,8 +19,6 @@ const Layout = ({ children }) => {
     }
   `)
 
-  console.log(data);
-
   return (
     <div className="wrapper">
       <div className="cover">
