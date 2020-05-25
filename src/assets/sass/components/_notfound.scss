@@ -1,0 +1,21 @@
+.not-found {
+  width: 100%;
+  height: auto;
+  text-align: center; 
+
+  h1 {
+    padding-top: 100px;
+    align-items: center;
+  }
+
+  img {
+    padding-top: 100px;
+    width: 55vh;
+    height: 55vh;
+
+    @media (min-width: 600px) {
+      width: 50vh;
+      height: 50vh;
+    }
+  }
+}

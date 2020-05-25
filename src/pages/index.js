@@ -1,15 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
-
+import SEO from '../components/seo'
 import Layout from "../components/layout"
 import Feature from "../components/feature"
 import Whatsnew from "../components/whats-new"
 import Testimonials from "../components/testimonials"
 import AboutUs from "../components/about-us"
+import Hero from "../components/hero"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Gatsby Starter" />
+      <Hero />
       <AboutUs />
       <div id="features">
         <Feature imgSrc={data.file.childImageSharp.fluid}>

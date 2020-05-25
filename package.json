@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-amphissa-default",
+  "name": "gatsby-amphissa-starter",
   "private": true,
   "description": "A simple starter to get up and developing quickly with ",
   "version": "0.1.0",
@@ -30,7 +30,9 @@
     "resolve-url-loader": "^3.1.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "amphissa",
+    "starter"
   ],
   "license": "MIT",
   "scripts": {
@@ -44,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/kpcn/amphissa"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/kpcn/amphissa/issues"
   }
 }

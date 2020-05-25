@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Amphissa`,
     description: `Kick off your next, great Gatsby project with this Amphissa starter`,
-    author: `@gatsbyjs`,
+    author: `chan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

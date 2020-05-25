@@ -29,22 +29,22 @@ const Header = ({ siteTitle }) => {
           <div className={`collapse navbar-collapse ${isOpen && 'collapse show'}`} id="menu">
             <ul className="navbar-nav ml-lg-auto">
               <li className="nav-item">
-                <Link to="/" className="nav-link active">
+                <Link to="/" className="nav-link active" stripHash>
                   Home <span className="sr-only">(current)</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link ips" to="/#features">
+                <AnchorLink className="nav-link ips" to="/#features" stripHash title="Features">
                   Features
                 </AnchorLink>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link ips" to="/#about-us">
+                <AnchorLink className="nav-link ips" to="/#about-us" stripHash title="About us">
                   About
                 </AnchorLink>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link ips" to="/#whats-new">
+                <AnchorLink className="nav-link ips" to="/#whats-new" stripHash title="What's new">
                   What's New
                 </AnchorLink>
               </li>
