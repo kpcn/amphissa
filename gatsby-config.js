@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Amphissa`,
     description: `Kick off your next, great Gatsby project with this Amphissa starter`,
+    keywords: ["amphissa, gatsby, gatsby starter"],
     author: `chan`,
+    siteUrl: 'https://amphissa.now.sh/'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +17,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-anchor-links`,
     {
       resolve: "gatsby-plugin-sass",
